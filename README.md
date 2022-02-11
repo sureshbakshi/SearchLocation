@@ -50,7 +50,7 @@ Google Place Autocomplete is to find places and show at map.
     ├── thumbnail.jpg           # an image will be used in og:image meta tag
 ├── src                         # Source code.
     ├── features              # reusable UI components
-        ├── search_location              # building blocks for the Map Interface with ArcGIS API for JavaScript (e.g. MapView, Search Widget and tec)
+        ├── search_location              # building blocks for the Map Interface API for JavaScript (e.g. MapView, Search Widget)
     ├── Store                   # reducers to manage app's state
     ├── App.js                   # Root component
     └── index.js               # entry point for the app

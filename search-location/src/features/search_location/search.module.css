@@ -1,0 +1,41 @@
+.google_combo_box {
+    position: relative;
+    justify-content: space-between;
+  }
+  .google_combo_map{
+      position: relative;
+  }
+  .MuiAutocomplete-root {
+    position: absolute;
+      z-index: 1;
+      background: #fff;
+      left: 10px;
+      top: 10px;
+  }
+  .map_block{
+      width: 450px;
+      height: 450px;
+  }
+  .map_container {
+    display: flex;
+    border: 2px solid #ccc;
+}
+
+.history_block h3 {
+    background: #eee;
+    margin: 0;
+    padding: 15px;
+}
+
+.user_history li {
+    text-align: left;
+    padding: 10px 15px;
+    list-style-type: decimal;
+}
+
+.user_history {
+    overflow: auto;
+    height: 390px;
+    margin: 0;
+    width:200px
+}

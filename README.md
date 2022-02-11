@@ -9,6 +9,7 @@ Google Place Autocomplete is to find places and show at map.
 - React-redux v7.2.6
 - React-redux toolkit (For async actions)
 - MUI v5.4.0
+- Redux-persist v6.0.0
 
 ## Getting Started
 

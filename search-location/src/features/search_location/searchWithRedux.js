@@ -42,7 +42,7 @@ export default function SearchPlacesWithRedux() {
     const options = useSelector(getOptions);
     const loaded = React.useRef(false);
     const mapRef = React.useRef(null);
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
     const searchHistory = useSelector(getHistory)
     React.useEffect(() => {
         if (typeof window !== 'undefined' && !loaded.current && !window.google) {
@@ -56,9 +56,7 @@ export default function SearchPlacesWithRedux() {
             loaded.current = true;
         }
     }, [])
-    const fetchPredictions = React.useMemo(
-        () =>
-            throttle((dispatch,inputValue, value) => {
+    const fetchPredictions = React.useMemo(() => throttle((inputValue, value) => {
                 dispatch(getPredictions({ ...autocompleteService, inputValue, value, updateMap }))
             }, 200),
         [],
